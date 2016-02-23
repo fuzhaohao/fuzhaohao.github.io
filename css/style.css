@@ -743,7 +743,6 @@ code {
   white-space: nowrap;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  text-transform: uppercase;
   -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2);
   box-shadow: 0 0 2px rgba(0,0,0,0.2);
   z-index: 1;
