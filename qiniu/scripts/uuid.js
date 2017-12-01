@@ -50,6 +50,7 @@ $(function() {
           }
         }).catch( (error) => {
           console.log(error);
+          alert(error);
           $uploadedResult.html('上传失败：' + res.responseText);
         })
         return false;
