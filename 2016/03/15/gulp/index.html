@@ -5,41 +5,34 @@
     
     <title>gulp：任务自动管理工具 | Michael&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Gulp与Grunt一样，也是一个自动任务运行器。它充分借鉴了Unix操作系统的管道（pipe）思想，很多人认为，在操作上，它要比Grunt简单。
-安装Gulp需要全局安装，然后再在项目的开发目录中安装为本地模块。先进入项目目录，运行下面的命令。
-123npm install -g gulpnpm install --save-dev gulp
-除了安装gulp以外，不同的任务还需要安装不同的gu">
+    <meta name="description" content="Gulp与Grunt一样，也是一个自动任务运行器。它充分借鉴了Unix操作系统的管道（pipe）思想，很多人认为，在操作上，它要比Grunt简单。 安装Gulp需要全局安装，然后再在项目的开发目录中安装为本地模块。先进入项目目录，运行下面的命令。 123npm install -g gulpnpm install --save-dev gulp 除了安装gulp以外，不同的任务还需要安装不同的gu">
+<meta name="keywords" content="gulp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="gulp：任务自动管理工具">
 <meta property="og:url" content="http://fuzhaohao.github.io/2016/03/15/gulp/index.html">
-<meta property="og:site_name" content="Michael's Blog">
-<meta property="og:description" content="Gulp与Grunt一样，也是一个自动任务运行器。它充分借鉴了Unix操作系统的管道（pipe）思想，很多人认为，在操作上，它要比Grunt简单。
-安装Gulp需要全局安装，然后再在项目的开发目录中安装为本地模块。先进入项目目录，运行下面的命令。
-123npm install -g gulpnpm install --save-dev gulp
-除了安装gulp以外，不同的任务还需要安装不同的gu">
-<meta property="og:updated_time" content="2016-04-05T00:44:30.456Z">
+<meta property="og:site_name" content="Michael&#39;s Blog">
+<meta property="og:description" content="Gulp与Grunt一样，也是一个自动任务运行器。它充分借鉴了Unix操作系统的管道（pipe）思想，很多人认为，在操作上，它要比Grunt简单。 安装Gulp需要全局安装，然后再在项目的开发目录中安装为本地模块。先进入项目目录，运行下面的命令。 123npm install -g gulpnpm install --save-dev gulp 除了安装gulp以外，不同的任务还需要安装不同的gu">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-19T06:17:20.228Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gulp：任务自动管理工具">
-<meta name="twitter:description" content="Gulp与Grunt一样，也是一个自动任务运行器。它充分借鉴了Unix操作系统的管道（pipe）思想，很多人认为，在操作上，它要比Grunt简单。
-安装Gulp需要全局安装，然后再在项目的开发目录中安装为本地模块。先进入项目目录，运行下面的命令。
-123npm install -g gulpnpm install --save-dev gulp
-除了安装gulp以外，不同的任务还需要安装不同的gu">
+<meta name="twitter:description" content="Gulp与Grunt一样，也是一个自动任务运行器。它充分借鉴了Unix操作系统的管道（pipe）思想，很多人认为，在操作上，它要比Grunt简单。 安装Gulp需要全局安装，然后再在项目的开发目录中安装为本地模块。先进入项目目录，运行下面的命令。 123npm install -g gulpnpm install --save-dev gulp 除了安装gulp以外，不同的任务还需要安装不同的gu">
     
 
     
 
     
 
-    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="/vendor/open-sans/styles.css" type="text/css">
-    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css" type="text/css">
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
 
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css">
 
-    <script src="/vendor/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
     
     
-        <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css" type="text/css">
+        <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css">
     
     
     
@@ -79,7 +72,7 @@
             
             <div id="search-form-wrap">
 
-    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit"> </button><input type="hidden" name="sitesearch" value="http://fuzhaohao.github.io"></form>
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit"> </button><input type="hidden" name="sitesearch" value="http://fuzhaohao.github.io"></form>
 
 </div>
         </div>
@@ -98,7 +91,7 @@
                 
                 <td>
                     
-    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="搜索"><input type="hidden" name="sitesearch" value="http://fuzhaohao.github.io"></form>
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><input type="hidden" name="sitesearch" value="http://fuzhaohao.github.io"></form>
 
                 </td>
             </tr>
@@ -260,7 +253,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>),</span><br><span class="line">    less = <span class="built_in">require</span>(<span class="string">'gulp-less'</span>),</span><br><span class="line">    livereload = <span class="built_in">require</span>(<span class="string">'gulp-livereload'</span>),</span><br><span class="line">    watch = <span class="built_in">require</span>(<span class="string">'gulp-watch'</span>);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'less'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">   gulp.src(<span class="string">'less/*.less'</span>)</span><br><span class="line">      .pipe(watch())</span><br><span class="line">      .pipe(less())</span><br><span class="line">      .pipe(gulp.dest(<span class="string">'css'</span>))</span><br><span class="line">      .pipe(livereload());</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>上面代码监视less文件，一旦编译完成，就自动刷新浏览器。</p>
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
-<li>Callum Macrae, <a href="http://www.smashingmagazine.com/2014/06/11/building-with-gulp/" target="_blank" rel="external">Building With Gulp</a></li>
+<li>Callum Macrae, <a href="http://www.smashingmagazine.com/2014/06/11/building-with-gulp/" target="_blank" rel="noopener">Building With Gulp</a></li>
 </ul>
 
         
@@ -593,7 +586,11 @@
             <ul>
                 
                     <li>
-                        <a href="http://itguliang.github.io" target="_blank">IT姑凉</a>
+                        <a href="https://itguliang.github.io" target="_blank">IT姑凉</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://jintang.github.io" target="_blank">堂（阿残）</a>
                     </li>
                 
             </ul>
@@ -609,7 +606,7 @@
         <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2016 Michael_Fu
+            &copy; 2018 Michael_Fu
             Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
         </div>
     </div>
@@ -633,12 +630,12 @@
 
 
     
-        <script src="/vendor/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+        <script src="/vendor/fancybox/jquery.fancybox.pack.js"></script>
     
 
 
 <!-- Custom Scripts -->
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="/js/main.js"></script>
 
     </div>
 </body>
